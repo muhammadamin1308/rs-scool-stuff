@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[St1] JS Scope & Functions</title>
+</head>
+<body>
+    <script>
+              // function getThis(){
+      //   return this;
+      // }
+      // console.log(getThis())
+
+      // 2
+      // var a =1, b = function a(x) {x && a(--x);};
+      // console.log(a)
+
+      // 3
+      // for(var i = 0; i< 10; i++){
+      //   //...
+      // }
+      // console.log(i)
+
+      // 4
+      // "use strict";
+
+      // const details = {
+      //   message: 'Hello',
+      // }
+      // function getMessage(){
+      //   return this.message;
+      // }
+      // console.log(getMessage.call(details
+      // ))
+
+      // 5
+
+      //   function d(a){
+      //     arguments[0] = 10;
+      //     return a;
+      //   }
+      //  ;
+      // console.log(d(5));
+
+      // 6
+      // function foo(){
+      //   return { bar:1};
+      // }
+      // console.log(typeof foo().bar)
+
+      // 7
+      // printMessage()
+      // function printMessage(){
+      //   console.log('Hello')
+      // }
+
+      // 8
+    //   for (let i = 0; i < 3; i++) {
+    //     setTimeout(function () {
+    //       console.log(i);
+    //     }, 1000);
+    //   }
+
+      // 9
+      // function foo() {console.log(thos);}
+      // foo.call(null)
+
+      // 10
+      // let name = 'john'
+      // function print(){
+      //   console.log(name)
+      // }
+
+      // setTimeout(() => {
+      //   let name = 'Peter';
+      //   print()
+      // }, 1000)
+
+      // 12
+      // "use strict"
+
+      // function getThis(){
+      //   return this;
+
+      // }
+      // console.log(getThis())
+
+      // 13
+      // const details = {
+      //   name: 'John',
+      // }
+      // function getMessage(message){
+      //   return `${message} ${this.name}`;
+      // }
+      // console.log(getMessage.apply(details, ['Hello']))
+
+      // 16
+      // function foo(a, b){
+      //   return a*b;
+      // }
+      // const bar = foo.bind(null, 2)
+      // console.log(bar(2))
+
+      // let naem = 'j'
+
+      // function print(){
+      //   let name = 'Per';
+      //   console.log(name)
+      // }
+      // print()
+
+      // for(var i = 0; i < 3; i++){
+      //   setTimeout(function(){
+      //     console.log(i)
+      //   }, 1000)
+      // }
+
+      // let f = (function g(){ return 23})
+      // console.log(typeof f())
+
+      // const foo = bar();
+      // const number = 2;
+
+      // function bar(){return number}
+
+      // var name = 'John';
+
+      // function print(){
+      //   console.log(name)
+      //   var name = 'Peter';
+      //   console.log(name);
+      // }
+      // print()
+
+      // var name = "John";
+      // var user = {
+      //   name: "Peter",
+      //   printMessage() {
+      //     console.log(`Hello, ${this.name}!`);
+      //   },
+      // };
+      // var printMessage = user.printMessage;
+      // printMessage();
+    </script>
+</body>
+</html>
